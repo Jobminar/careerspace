@@ -1,0 +1,68 @@
+.home-main-con{
+    /* border: 1px solid black; */
+    margin: 0.5rem 2rem;
+   position: relative;
+}
+.main-img-con img{
+   width: 100%;
+   height: 100%;
+}
+.home-relative1{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.73px;
+    text-align: left;
+    color: white;
+}
+.home-relative2{
+    position: absolute;
+    top: 220px;
+    left: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: white;
+
+}
+.home-relativebuttons{
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+   position: absolute;
+   top: 300px;
+   left: 100px;
+   
+}
+.home-relativebuttons button{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+.home-relativebuttons button:hover{
+    cursor: pointer;
+}
+.button1{
+    background-color: #FFC000;
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21.76px;
+    text-align: center;
+    border: none;
+
+}
+.button2{
+    
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21.76px;
+    text-align: center;
+    border: none;
+}

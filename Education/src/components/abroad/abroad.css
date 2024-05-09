@@ -1,0 +1,67 @@
+.abroad-main{
+    height: 25rem;
+    margin: 2rem 0rem;
+    position: relative;
+}
+.abroad-main img{
+    width: 100%;
+    height: 100%;
+}
+.abroad-relative{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    right: 200px;
+}
+
+.abroad-relative h1{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    color: white;
+
+}
+.abroad-relative p{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    text-align: center;
+    color: white;
+}
+.abroad-relative button{
+    width: 12rem;
+    height: 2.5rem;
+    background-color: 
+    #FF9A00;
+    color: white;
+    border: none;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+.prev-button{
+    width: 2rem;
+    background-color: none;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+}
+.next-button{
+    width: 2rem;
+    background-color: none;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+}
+  

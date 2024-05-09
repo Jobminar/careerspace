@@ -1,0 +1,49 @@
+.contact-home{
+    /* border: 1px solid black; */
+    position: relative;
+    margin: 2rem 0rem;
+}
+
+.contact-home img{
+    width: 100%;
+    height: 100%;
+}
+.relative1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    color: white;
+
+}
+.relative2{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.05px;
+    color: white;
+}
+.relative-button{
+    width: 10rem;
+    height: 3rem;
+    background-color: #FF9A00;
+    text-align: center;
+    position: absolute;
+    bottom: 90px;
+    left: 50px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.05px;
+    color: white;
+    border: none;
+}
+.relative-button:hover{
+    cursor: pointer;
+}

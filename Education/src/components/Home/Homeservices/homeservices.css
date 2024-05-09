@@ -1,0 +1,77 @@
+.services-main {
+    /* Your existing styles */
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    /* overflow-x: hidden;  */
+  }
+  
+  .service-headdings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services-main h1 {
+    display: inline-block;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55.41px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    border-bottom: 3px solid #FB9506;
+  }
+  
+
+
+  
+  .home-services-sub {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    /* margin-right: 1rem;  */
+  }
+  
+  .service-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  padding-top: 0.4rem;
+  }
+  
+  .service-img img {
+    width: 40%;
+    height: 40%;
+  }
+  
+  .home-services-sub h2 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: center;
+  }
+  
+  .home-services-sub p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+  }
+  
+.home-services-main{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    gap: var(--size-3);
+    overflow-x: auto;
+    overscroll-behavior-inline:contain ;
+    padding: 1rem 2rem;
+    scrollbar-width: none;
+    column-gap: 1rem;
+
+}
