@@ -1,25 +1,21 @@
-import Home from "./components/Home/home"
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "./components/Home/home";
 import Inputform from "./components/Home/inputform";
 import Header from "./components/Home/Header/header";
 
-
 function App() {
-  
-
   return (
-   <>
-    <BrowserRouter>
-    <Header/>
+    <>
+      <Router>
+        <Header />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/form" element={<Inputform/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/form" element={<Inputform />} />
         </Routes>
-      </BrowserRouter>
-
-  </>
-  )
+      </Router>
+    </>
+  );
 }
 
-export default App
+export default App;

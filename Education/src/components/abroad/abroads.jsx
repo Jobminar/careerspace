@@ -15,7 +15,7 @@ const Abroadmain = () => {
     {
       image: StudyAbroadImg,
       title: 'Want to Study in India?',
-      description: 'We offered admissions for MBA , MCA, M.TECH , B.TECH ..'
+      description: 'We offered admissions for B.TECH , MBBS , M.TECH , BBA , MBA , MCA..'
     },
     {
       image: StudyMSImg,
