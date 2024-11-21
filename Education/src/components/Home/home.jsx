@@ -20,19 +20,20 @@ const Home = () => {
     <>
       <div className='home-main-con'>
         <div className='main-img-con'>
-          <img src={mainimg} alt='mainimg'/>
-          <p className='home-relative1'>Best Educational consultant<br/> in India</p>
-          <p className='home-relative2'>We are India’s leading educational  consultant providing admission guidance for top courses <br/>in India and abroad</p>
-          <div className='home-relativebuttons'>
-            <button className='button1'>Home</button>
-            <button className='button2' onClick={handleFormClick}>Contact</button>
+          <div>
+            <p className='home-relative1'>Best Educational consultant<br /> in India</p>
+            <p className='home-relative2'>We are India’s leading educational  consultant providing admission guidance for top courses <br />in India and abroad</p>
+            <div className='home-relativebuttons'>
+              <button className='button1 btn btn-info me-2'>Home</button>
+              <button className='button2 btn btn-warning' onClick={handleFormClick}>Contact</button>
+            </div>
           </div>
         </div>
-        <Homeservice/>
-        <Contacthome/>
-        <About/>
-        <Abroadmain/>
-        <Footer/>
+        <Homeservice />
+        <Contacthome />
+        <About />
+        <Abroadmain />
+        <Footer />
       </div>
     </>
   );

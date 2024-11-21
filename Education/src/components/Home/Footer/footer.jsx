@@ -10,28 +10,33 @@ import instagram from '../../../assets/images/instagram.png'
 const Footer = () => {
   return (
     <>
-       <div className='footer-main'>
-           <div className='footer-sub'>
-                <p>Beside Tata motors , <br/>Panama X roads ,<br/> beneath Bata showroom building , <br/>Vanasthalipuram, 500070</p>
-           </div>
-           <div className='footer-sub2'>
-               <p className='getintouch'>Get In Touch</p>
-               <div className='call-mail'>
-                <img src={call} alt='call'/>
-                <p>9703156666</p>
-               </div>
-               <div className='call-mail'>
-                <img src={mail} alt='mail'/>
-                <p>Thecareerspace1@gmail.com</p>
-               </div>
-               <div className='s-icons'>
-                 <img src={facebook} alt='facebook'/>
-                 <img src={linkedin} alt='linkedin'/>
-                 <img src={twitter} alt='x'/>
-                 <img src={instagram} alt='insta' />
-               </div>
-           </div>
-       </div>
+      <div className='footer-main'>
+        <div className='d-flex justify-content-center pe-3'>
+          <div>
+            <li style={{ listStyle: 'none' }}>Beside tata Motots,</li>
+            <li style={{ listStyle: 'none' }}>Panama X roads ,</li>
+            <li style={{ listStyle: 'none' }}>Beneath Bata showroom building ,</li>
+            <li style={{ listStyle: 'none' }}>Vanasthalipuram, 500070</li>
+          </div>
+        </div>
+        <div className='d-flex justify-content-center'>
+          <div>
+            <div className='fs-5 fw-bold'>
+              Get IN Touch
+            </div>
+            <div className='fw-bold fs-6'>
+              <div className='bi-telephone-outbound'> 9703156666</div>
+              <div className='bi-envelope'> Thecareerspace1@gmail.com</div>
+            </div>
+            <div className='d-flex gap-3 socialmedia'>
+              <div className='bi-facebook'></div>
+              <div className='bi-linkedin'></div>
+              <div className='bi-twitter'></div>
+              <div className='bi-instagram'></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

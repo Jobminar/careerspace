@@ -1,38 +1,67 @@
-.about-us-main{
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    background-color: #F5F5F5;
-    margin: 1rem 0rem;
-    padding: 1rem;
-}
-.about-head{
-    display: block;
-    padding-left: 3rem;
-}
-.about-head h2{
-    font-family: Inter;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48.41px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    
-}
-.about-sub{
+.aboutcompany {
     display: grid;
-    grid-template-columns: 65% 35%;
-
+    grid-template-columns: 6fr 4fr;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
-.about-sub p{
-    font-family: Inter;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0.02em;
-    text-align: left;
-
+.smcontainer{
+    display: none;
 }
-.about-image img{
-   width: 100%;
-   height: 100%;
+
+.companyimg {
+    width: 100%;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Text styles */
+.aboutcompany div {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Image styles */
+.aboutcompany img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .aboutcompany{
+        grid-template-columns: 7fr 5fr;
+
+    }
+    .aboutcompany div {
+        font-size: 0.8em;
+    }
+    .container{
+        display: none;
+    }
+    .smcontainer{
+        display: block;
+    }
+    .aboutcompany{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutcompany div {
+        font-size: 0.6em;
+    }
+    .container{
+        display: none;
+    }
+    .aboutcompany{
+        padding: 0px;
+    }
 }

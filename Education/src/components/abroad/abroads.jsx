@@ -41,16 +41,15 @@ const Abroadmain = () => {
 
   return (
     <>
-      <div className={`abroad-main fade-enter`}>
-        <img src={frames[currentFrame].image} alt={`abroad-study-${currentFrame + 1}`} />
+      <div className='abroad-main fade-enter m-2 rounded-3'>
         <div className='abroad-relative'>
-          <h1>{frames[currentFrame].title}</h1>
-          <p>{frames[currentFrame].description}</p>
-          <button onClick={handlecontactfrom}>Apply</button>
+          <div className='abroadTitle'>{frames[currentFrame].title}</div>
+          <p className='abroadscription'>{frames[currentFrame].description}</p>
+          <button onClick={()=>handlecontactfrom()} className='btn btn-warning'>Apply</button>
         </div>
         <div className='carousel-controls'>
-          <button className='prev-button' onClick={prevFrame}>&#10094;</button>
-          <button className='next-button' onClick={nextFrame}>&#10095;</button>
+          <button className='prev-button' onClick={()=>prevFrame()}>&#10094;</button>
+          <button className='next-button' onClick={()=>nextFrame()}>&#10095;</button>
         </div>
       </div>
     </>

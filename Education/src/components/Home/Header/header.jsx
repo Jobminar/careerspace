@@ -1,45 +1,39 @@
-import React, { useRef } from 'react';
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import logo from '../../../assets/images/logo.jpeg';
+import { useNavigate } from 'react-router-dom';
 import './header.css';
-import logo from '../../../assets/images/logo.jpeg'
 
 const Header = () => {
- 
+  const navigate = useNavigate();
 
-  const scrollToAboutUs = () => {
-    window.scrollTo({ top: 1400, behavior: 'smooth' });
-  };
-
-  const scrollToServices = () => {
-    window.scrollTo({ top: 500, behavior: 'smooth' });
-  };
-  
-
-  const scrollToCareer = () => {
-    window.scrollTo({ top: 1800, behavior: 'smooth' });
-  };
-
-  const scrollToContact = () => {
-    window.scrollTo({ top: 900, behavior: 'smooth' });
+  const handleNavigation = (path, scrollPosition) => {
+    navigate(path);
+    window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
   };
 
   return (
-    <>
-     
-      <div className="header-con">
-      <div className='header-logo'>
-        <img src={logo} alt='logo'/>
-      </div>
-      <div className='main-header'>
-        <p onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</p>
-        <p onClick={scrollToAboutUs}>About Us</p>
-        <p onClick={scrollToServices}>Services</p>
-        <p onClick={scrollToCareer}>Career</p>
-        <p onClick={scrollToContact}>Contact</p>
-      </div>
-      
-      </div>
-    
-    </>
+    <Navbar bg="light" variant="light" expand="lg" sticky="top">
+      <Container>
+        <Navbar.Brand onClick={() => handleNavigation('/', 0)} style={{ cursor: 'pointer' }}>
+          <img
+            src={logo}
+            alt="logo"
+            style={{ height: '40px', marginRight: '10px' }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link onClick={() => handleNavigation('/', 0)}>Home</Nav.Link>
+            <Nav.Link onClick={() => handleNavigation('/', 1400)}>About Us</Nav.Link>
+            <Nav.Link onClick={() => handleNavigation('/', 500)}>Services</Nav.Link>
+            <Nav.Link onClick={() => handleNavigation('/', 1800)}>Career</Nav.Link>
+            <Nav.Link onClick={() => handleNavigation('/', 900)}>Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
