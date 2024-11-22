@@ -6,11 +6,6 @@ import StudyMBBSImg from '../../assets/images/abroad-study.png';
 import { useNavigate } from 'react-router-dom';
 
 const Abroadmain = () => {
- const  navigate = useNavigate()
-
-  const handlecontactfrom=()=>{
-    navigate('/form')
-  }
   const frames = [
     {
       image: StudyAbroadImg,
@@ -45,7 +40,7 @@ const Abroadmain = () => {
         <div className='abroad-relative'>
           <div className='abroadTitle'>{frames[currentFrame].title}</div>
           <p className='abroadscription'>{frames[currentFrame].description}</p>
-          <button onClick={()=>handlecontactfrom()} className='btn btn-warning'>Apply</button>
+          <button onClick={()=>window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })} className='btn btn-warning'>Apply</button>
         </div>
         <div className='carousel-controls'>
           <button className='prev-button' onClick={()=>prevFrame()}>&#10094;</button>

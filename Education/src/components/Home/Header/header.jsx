@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../../../assets/images/logo.jpeg';
+import logo from '../../../assets/images/nextlogo1.png';
 import { useNavigate } from 'react-router-dom';
 import './header.css';
 
@@ -19,7 +19,7 @@ const Header = () => {
           <img
             src={logo}
             alt="logo"
-            style={{ height: '40px', marginRight: '10px' }}
+            style={{ height: '50px', marginRight: '10px' }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

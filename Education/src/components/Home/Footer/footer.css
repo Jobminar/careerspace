@@ -12,8 +12,11 @@ li{
     font-size: 30px;
     margin: 10px 0px;
 }
+.showonmobile{
+    display: none;
+}
 
-@media (max-width: 650px){
+@media (max-width: 750px){
     .bi-telephone-outbound, .bi-envelope{
         font-size: 13px;
     }
@@ -23,6 +26,13 @@ li{
     li{
         font-size: 20px;
     }
+    .showonmobile{
+        display: block;
+        background-color: #000000;
+    }
+    .showmobile1{
+        display: none
+    }
 }
 @media (max-width: 450px){
     .bi-telephone-outbound, .bi-envelope{
@@ -30,5 +40,9 @@ li{
     }
     li{
         font-size: 12px;
+    }
+    .showonmobile{
+        display: block;
+        background-color: #000000;
     }
 }

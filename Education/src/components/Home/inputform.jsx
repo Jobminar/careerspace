@@ -4,9 +4,9 @@ import './inputform.css'
 const Inputform = () => {
   return (
     <>
-      <div className='form-con d-flex justify-content-center align-items-center' style={{height:'80vh'}}>
+      <div className='form-con d-flex justify-content-center align-items-center'>
         <div className=' logincontainer p-3 rounded-3 border-1 shadow bg-dark-subtle'>
-          <form action="https://formspree.io/f/mdoqbvzw" method="POST" role="form" >
+          <form action="https://formspree.io/f/mdoqbvzw" method="POST" role="form"   >
 
             <div class="row">
               <div className='fw-medium fs-3' >Please enter your details</div>

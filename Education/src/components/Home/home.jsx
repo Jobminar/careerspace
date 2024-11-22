@@ -9,12 +9,6 @@ import Contacthome from './Contactus/contact'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const handleFormClick = () => {
-    // Navigate to the form page
-    navigate('/form'); // Replace '/form' with the path to your form page
-  };
 
   return (
     <>
@@ -24,8 +18,7 @@ const Home = () => {
             <p className='home-relative1'>Best Educational consultant<br /> in India</p>
             <p className='home-relative2'>We are India’s leading educational  consultant providing admission guidance for top courses <br />in India and abroad</p>
             <div className='home-relativebuttons'>
-              <button className='button1 btn btn-info me-2'>Home</button>
-              <button className='button2 btn btn-warning' onClick={handleFormClick}>Contact</button>
+              <button className='button2 btn btn-warning' onClick={()=>window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>Contact</button>
             </div>
           </div>
         </div>
